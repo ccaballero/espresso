@@ -1,0 +1,91 @@
+/* palette -> #F7F6E4 #E2D5C1 #5F3711 #F6F6E2 #D4C098 */
+/* http://www.colourlovers.com/palette/45488/french_vanilla */
+
+@font-face {
+    font-family: 'Minimal';
+    src: url('/fonts/minimal.otf');
+}
+
+@font-face {
+    font-family: 'Living Together';
+    src: url('/fonts/Living Together.otf');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('/images/retina_wood.png');
+}
+
+#main {
+    margin: 0px auto;
+    margin-top: 2.0em;
+    margin-bottom: 2.0em;
+    min-width: 320px;
+    max-width: 960px;
+}
+
+h1 {
+    font-family: 'Living Together';
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 0.3em;
+    text-align: center;
+    background-color: #5F3711;
+    color: #D4C098;
+    box-shadow: 0px 5px 10px #5F3711;
+    text-shadow: 4px 4px 3px #000000;
+    background-image: url('/images/square_bg.png');
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    font-family: 'Minimal', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 2.0em;
+    font-weight: normal;
+    color: #5F3711;
+    text-decoration: none;
+    line-height: 1.7em;
+    margin: 0em 0.07em;
+    padding: 0.1em 0.6em;
+    background-color: #F6F6E2;
+    border-radius: 7px;
+    text-transform: lowercase;
+    box-shadow: 1px 1px 3px #5F3711 inset;
+}
+
+ul li a:hover,
+ul li a:focus {
+    background-color: #5F3711;
+    color: #F6F6E2;
+    outline: none;
+}
+
+@media only screen and (min-width: 960px) {
+    h1 {
+        font-size: 6.0em;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    h1 {
+        font-size: 4.0em;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    h1 {
+        font-size: 3.0em;
+    }
+}
