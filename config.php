@@ -5,12 +5,12 @@ $title = 'scesi espresso';
 $server = 'local';
 $domains = array(
     'babel',
-    array('mælstrøm', 'maelstrom'),
+    'maelstrom',
     
     'espresso',
     'macchiato',
 //    'cappuchino',
-//    'latte',
+    'latte',
 //    'mochaccino',
 
     'federica',
