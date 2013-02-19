@@ -29,6 +29,21 @@ body {
     max-width: 960px;
 }
 
+#footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-image: url('/images/retina_wood.png');
+}
+
+#footer p {
+    font-family: 'Minimal';
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px 5px;
+    text-align: right;
+}
+
 h1 {
     font-family: 'Living Together';
     font-weight: normal;
@@ -36,11 +51,9 @@ h1 {
     padding: 0px;
     padding-bottom: 0.3em;
     text-align: center;
-    background-color: #5F3711;
-    color: #D4C098;
-    box-shadow: 0px 5px 10px #5F3711;
-    text-shadow: 4px 4px 3px #000000;
-    background-image: url('/images/square_bg.png');
+    color: #5F3711;
+    text-shadow: 4px 4px 3px #666666;
+    background-image: url('/images/retina_wood.png');
 }
 
 ul {

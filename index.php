@@ -24,5 +24,8 @@
             <?php } ?>
             </ul>
         </div>
+        <div id="footer">
+            <p>sociedad científica de estudiantes de sistemas e informática</p>
+        </div>
     </body>
 </html>
