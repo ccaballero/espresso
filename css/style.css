@@ -38,11 +38,15 @@ body {
 
 #footer p {
     font-family: 'Minimal';
-    font-size: 15px;
+    font-size: 16px;
+    font-style: italic;
     margin: 0px;
     padding: 0px 5px;
     text-align: right;
 }
+
+#footer p.right { float: right; }
+#footer p.left { float: left; }
 
 h1 {
     font-family: 'Living Together';
