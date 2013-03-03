@@ -6,27 +6,31 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title><?php echo $title ?></title>
-        <link href="/images/cup.png" rel="icon" />
-        <link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="/images/cup.png" />
+        <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="/css/ui-lightness/jquery-ui-1.10.1.custom.min.css" media="screen" type="text/css" />
+
+        <script src="/js/jquery-1.9.1.js"></script>
+        <script src="/js/jquery-ui-1.10.1.custom.min.js"></script>
+        <script src="/js/espresso.js"></script>
     </head>
     <body>
         <h1><?php echo $title ?></h1>
         <div id="main">
             <ul>
-            <?php foreach ($domains as $domain) { ?>
-                <?php $label = is_array($domain) ? $domain[0] : $domain ?>
-                <?php $url = is_array($domain) ? $domain[1] : "http://$label.$server/" ?>
-                <li>
-                    <a target="_BLANK" href="<?php echo $url ?>">
-                        <?php echo $label ?>
-                    </a>
-                </li>
-            <?php } ?>
+        <?php foreach ($items as $item) { ?>
+            <li>
+                <a class="tooltip" target="_BLANK"
+                   title="<?php echo get_description($item) ?>"
+                   href="<?php echo get_url($item, $server) ?>"><?php echo $item['label'] ?></a>
+            </li>
+        <?php } ?>
             </ul>
         </div>
         <div id="footer">
             <p class="left">free people</p>
             <p class="right">sociedad científica de estudiantes de sistemas e informática</p>
+            <p class="left"><a href="https://github.com/ccaballero/espresso" target="_BLANK">código fuente</a></p>
         </div>
     </body>
 </html>

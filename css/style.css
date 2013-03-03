@@ -36,13 +36,19 @@ body {
     background-image: url('/images/retina_wood.png');
 }
 
-#footer p {
+#footer p,
+#footer p a {
     font-family: 'Minimal';
     font-size: 16px;
     font-style: italic;
     margin: 0px;
     padding: 0px 5px;
     text-align: right;
+    color: #5F3711;
+}
+
+#footer p a {
+    text-decoration: none;
 }
 
 #footer p.right { float: right; }
