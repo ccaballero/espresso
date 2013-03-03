@@ -28,9 +28,9 @@
             </ul>
         </div>
         <div id="footer">
+            <p class="left"><a href="https://github.com/ccaballero/espresso" target="_BLANK">código fuente</a></p>
             <p class="left">free people</p>
             <p class="right">sociedad científica de estudiantes de sistemas e informática</p>
-            <p class="left"><a href="https://github.com/ccaballero/espresso" target="_BLANK">código fuente</a></p>
         </div>
     </body>
 </html>

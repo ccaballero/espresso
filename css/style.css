@@ -34,6 +34,8 @@ body {
     bottom: 0px;
     width: 100%;
     background-image: url('/images/retina_wood.png');
+    height: 1.2em;
+    overflow: hidden;
 }
 
 #footer p,
