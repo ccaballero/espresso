@@ -15,9 +15,9 @@
             <ul>
             <?php foreach ($domains as $domain) { ?>
                 <?php $label = is_array($domain) ? $domain[0] : $domain ?>
-                <?php $url = is_array($domain) ? $domain[1] : $domain ?>
+                <?php $url = is_array($domain) ? $domain[1] : "http://$label.$server/" ?>
                 <li>
-                    <a target="_BLANK" href="<?php echo "http://$url.$server/" ?>">
+                    <a target="_BLANK" href="<?php echo $url ?>">
                         <?php echo $label ?>
                     </a>
                 </li>
