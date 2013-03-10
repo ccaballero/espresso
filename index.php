@@ -19,11 +19,15 @@
         <div id="main">
             <ul>
         <?php foreach ($items as $item) { ?>
+        <?php if  ($item == null) { ?>
+            <br />
+        <?php } else { ?>
             <li>
                 <a class="tooltip" target="_BLANK"
                    title="<?php echo get_description($item) ?>"
                    href="<?php echo get_url($item, $server) ?>"><?php echo $item['label'] ?></a>
             </li>
+        <?php } ?>
         <?php } ?>
             </ul>
         </div>
