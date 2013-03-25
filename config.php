@@ -2,7 +2,9 @@
 
 setlocale(LC_ALL, 'en_US.UTF8');
 
-$title = 'scesi espresso';
+$title = 'Sociedad científica de estudiantes de sistemas e informática - SCESI';
+$title2 = 'scesi espresso';
+
 $host = $_SERVER['HTTP_HOST'];
 
 if ($host == '167.157.28.34') {
@@ -19,11 +21,25 @@ $items = array(
     array('label' => 'maelstrom',
           'description' => 'Biblioteca mælstrøm (testing)'),
     null,
-    array('label' => 'espresso',
-          'description' => 'Portada principal de los servicios disponibles (producción)'),
-    array('label' => 'latte',
-          'description' => 'Lector RSS (desarrollo)'),
-    array('label' => 'mochaccino'),
+    array('label' => 'open seasons',
+          'url' => 'http://yachay.scesi.org/communities/open-seasons',
+          'description' => 'Sitio de recursos, disponibles para las open seasons (testing)'),
+    array('label' => 'fosobi',
+          'url' => 'http://yachay.scesi.org/communities/fosobi',
+          'description' => 'Proyecto FOSOBI, orientado a la creación de OBI GNU/Linux, y FOS GNU/Linux.'),
+    null,
+    array('label' => 'jornadas',
+          'description' => 'Sitio de la jornadas de seguridad informática 2012 (producción)'),
+    array('label' => 'hackmeeting',
+          'description' => 'Sitio del hackmeeting 2012 (producción)'),
+    null,
+    array('label' => 'wiki',
+          'description' => 'Wiki utilizado por la sociedad científica para fines documentales (producción)'),
+    array('label' => 'blog',
+          'description' => 'Blog oficial de la sociedad cientifica (producción)'),
+    array('label' => 'galeria'),
+    array('label' => 'ibox',
+          'url' => 'http://ibox.scesi.memi.umss.edu.bo'),
     null,
     array('label' => 'yachay memi',
           'url' => 'http://yachay.memi.umss.edu.bo',
@@ -50,25 +66,15 @@ $items = array(
     array('label' => 'biologia',
           'description' => 'Sitio oficial de la carrera de biología (producción)'),
     null,
-    array('label' => 'wiki',
-          'description' => 'Wiki utilizado por la sociedad científica para fines documentales (producción)'),
-    array('label' => 'blog',
-          'description' => 'Blog oficial de la sociedad cientifica (producción)'),
-    array('label' => 'galeria'),
-    array('label' => 'ibox',
-          'url' => 'http://ibox.scesi.memi.umss.edu.bo'),
-    null,
-    array('label' => 'jornadas',
-          'description' => 'Sitio de la jornadas de seguridad informática 2012 (producción)'),
-    array('label' => 'hackmeeting',
-          'description' => 'Sitio del hackmeeting 2012 (producción)'),
-    null,
-    array('label' => 'open seasons',
-          'url' => 'http://yachay.scesi.org/communities/open-seasons',
-          'description' => 'Sitio de recursos, disponibles para las open seasons (testing)'),
-    array('label' => 'fosobi',
-          'url' => 'http://yachay.scesi.org/communities/fosobi',
-          'description' => 'Proyecto FOSOBI, orientado a la creación de OBI GNU/Linux, y FOS GNU/Linux.'),
+    array('label' => 'espresso',
+          'description' => 'Portada principal de los servicios disponibles (producción)'),
+    array('label' => 'latte',
+          'description' => 'Lector RSS (desarrollo)'),
+    array('label' => 'macchiato',
+          'description' => 'Musica en linea (desarrollo)'),
+    array('label' => 'cappuchino',
+          'description' => 'Planificador de horarios en la FCyT (desarrollo)'),
+    array('label' => 'mochaccino'),
 );
 
 function get_url($item, $server) {

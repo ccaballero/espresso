@@ -15,7 +15,7 @@
         <script src="/js/espresso.js"></script>
     </head>
     <body>
-        <h1><?php echo $title ?></h1>
+        <h1><?php echo $title2?></h1>
         <div id="main">
             <ul>
         <?php foreach ($items as $item) { ?>
